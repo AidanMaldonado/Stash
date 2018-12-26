@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //Game Variables
+    var money = 0
+    
+    //Labels
+    @IBOutlet weak var moneyLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
