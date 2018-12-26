@@ -20,27 +20,30 @@ class PurchaseViewController: UIViewController {
     //Labels
     @IBOutlet weak var moneyLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var buttonImage: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateLabels()
+        determinePreset()
     }
     
-    func determinePreset() -> String {
+    func determinePreset() {
         var titleMessage = ""
         if shopPreset == 1 {
             titleMessage = "Ammo"
         } else if shopPreset == 2 {
             titleMessage = "Guns"
+            buttonImage.setImage(#imageLiteral(resourceName: "pistols_12"), for: .normal)
         } else if shopPreset == 3 {
             titleMessage = "Items"
         }
-        return titleMessage
+        
+        titleLabel.text = titleMessage
     }
     
     func updateLabels() {
         moneyLabel.text = "$" + String(money)
-        titleLabel.text = determinePreset()
     }
     
     @IBAction func buyAmmo() {

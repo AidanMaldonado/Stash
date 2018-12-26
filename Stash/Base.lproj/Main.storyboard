@@ -561,6 +561,7 @@
                         <viewLayoutGuide key="safeArea" id="KU8-S8-DVf"/>
                     </view>
                     <connections>
+                        <outlet property="buttonImage" destination="RM1-Rd-wC5" id="t3w-y8-yCu"/>
                         <outlet property="moneyLabel" destination="Tr5-ie-aPz" id="kMD-BE-kD5"/>
                         <outlet property="titleLabel" destination="Oxh-XV-37j" id="8D7-3r-9ca"/>
                     </connections>
