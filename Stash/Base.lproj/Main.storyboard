@@ -295,9 +295,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="hPo-Sy-TDu"/>
                     </view>
-                    <connections>
-                        <outlet property="moneyLabel" destination="Yg8-9V-6nX" id="EAr-lI-Dc2"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRi-AH-1sc" sceneMemberID="firstResponder"/>
             </objects>
@@ -735,9 +732,6 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="m6t-Oa-q15"/>
                     </view>
-                    <connections>
-                        <outlet property="moneyLabel" destination="e5d-Q9-X59" id="lsa-wD-CiO"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oEY-yJ-eGl" sceneMemberID="firstResponder"/>
             </objects>
@@ -958,6 +952,6 @@
         <segue reference="iXd-CY-CJj"/>
         <segue reference="0JZ-4Y-9dv"/>
         <segue reference="sh4-wl-Y3Y"/>
-        <segue reference="SkZ-eR-81y"/>
+        <segue reference="OQe-JH-CYh"/>
     </inferredMetricsTieBreakers>
 </document>
