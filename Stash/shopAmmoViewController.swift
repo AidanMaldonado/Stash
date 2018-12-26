@@ -1,5 +1,5 @@
 //
-//  LootViewController.swift
+//  shopAmmoViewController.swift
 //  Stash
 //
 //  Created by Aidan Maldonado on 12/26/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LootViewController: UIViewController {
+class shopAmmoViewController: UIViewController {
     
     //Game Variables
     var money = 1000
@@ -16,5 +16,6 @@ class LootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 
 }

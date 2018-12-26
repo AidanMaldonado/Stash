@@ -17,13 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var moneyLabel: UILabel!
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "characterSegueIdentifier" {
+        if segue.identifier == "deploySegueIdentifier" {
             let destVC = segue.destination as! DeployViewController
             destVC.money = money
-        } else if segue.identifier == "characterPickSegueIdentifier" {
+        } else if segue.identifier == "lootSegueIdentifier" {
             let destVC = segue.destination as! LootViewController
             destVC.money = money
-        } else if segue.identifier == "characterPickSegueIdentifier" {
+        } else if segue.identifier == "shopSegueIdentifier" {
             let destVC = segue.destination as! ShopViewController
             destVC.money = money
         }

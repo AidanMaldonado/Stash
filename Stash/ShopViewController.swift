@@ -12,6 +12,13 @@ class ShopViewController: UIViewController {
     
     //Game Variables
     var money = 1000
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "shopAmmoSegueIdentifier" {
+            let destVC = segue.destination as! ShopAmmoViewController
+            destVC.money = money
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
