@@ -16,8 +16,9 @@ class ShopViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "purchaseSegueIdentifier" {
-            let destVC = segue.destination as! ShopAmmoViewController
+            let destVC = segue.destination as! PurchaseViewController
             destVC.money = money
+            destVC.shopPreset = shopPreset
         } else if segue.identifier == "homeSegueIdentifier" {
             let destVC = segue.destination as! ViewController
             destVC.money = money

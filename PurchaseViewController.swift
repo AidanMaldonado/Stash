@@ -26,14 +26,21 @@ class PurchaseViewController: UIViewController {
         updateLabels()
     }
     
-    func determinePreset() {
+    func determinePreset() -> String {
+        var titleMessage = ""
         if shopPreset == 1 {
-            
+            titleMessage = "Ammo"
+        } else if shopPreset == 2 {
+            titleMessage = "Guns"
+        } else if shopPreset == 3 {
+            titleMessage = "Items"
         }
+        return titleMessage
     }
     
     func updateLabels() {
         moneyLabel.text = "$" + String(money)
+        titleLabel.text = determinePreset()
     }
     
     @IBAction func buyAmmo() {
