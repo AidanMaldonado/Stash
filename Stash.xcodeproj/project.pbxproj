@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4773E78121D40E9300952852 /* PurchaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4773E78021D40E9300952852 /* PurchaseViewController.swift */; };
 		4796314221D34BF30044A265 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4796314121D34BF30044A265 /* AppDelegate.swift */; };
 		4796314421D34BF30044A265 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4796314321D34BF30044A265 /* ViewController.swift */; };
 		4796314721D34BF30044A265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4796314521D34BF30044A265 /* Main.storyboard */; };
@@ -15,10 +16,10 @@
 		4796315421D3F4EE0044A265 /* LootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4796315321D3F4EE0044A265 /* LootViewController.swift */; };
 		4796315621D3F5000044A265 /* DeployViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4796315521D3F5000044A265 /* DeployViewController.swift */; };
 		4796315821D3F5100044A265 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4796315721D3F5100044A265 /* ShopViewController.swift */; };
-		4796315C21D405FD0044A265 /* ShopAmmoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4796315B21D405FD0044A265 /* ShopAmmoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4773E78021D40E9300952852 /* PurchaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PurchaseViewController.swift; path = ../PurchaseViewController.swift; sourceTree = "<group>"; };
 		4796313E21D34BF30044A265 /* Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4796314121D34BF30044A265 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4796314321D34BF30044A265 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		4796315321D3F4EE0044A265 /* LootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootViewController.swift; sourceTree = "<group>"; };
 		4796315521D3F5000044A265 /* DeployViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployViewController.swift; sourceTree = "<group>"; };
 		4796315721D3F5100044A265 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
-		4796315B21D405FD0044A265 /* ShopAmmoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ShopAmmoViewController.swift; path = ../ShopAmmoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				4796315321D3F4EE0044A265 /* LootViewController.swift */,
 				4796315521D3F5000044A265 /* DeployViewController.swift */,
 				4796315721D3F5100044A265 /* ShopViewController.swift */,
-				4796315B21D405FD0044A265 /* ShopAmmoViewController.swift */,
+				4773E78021D40E9300952852 /* PurchaseViewController.swift */,
 				4796314521D34BF30044A265 /* Main.storyboard */,
 				4796314821D34BF30044A265 /* Assets.xcassets */,
 				4796314A21D34BF30044A265 /* LaunchScreen.storyboard */,
@@ -149,8 +149,8 @@
 			files = (
 				4796314421D34BF30044A265 /* ViewController.swift in Sources */,
 				4796315621D3F5000044A265 /* DeployViewController.swift in Sources */,
-				4796315C21D405FD0044A265 /* ShopAmmoViewController.swift in Sources */,
 				4796315821D3F5100044A265 /* ShopViewController.swift in Sources */,
+				4773E78121D40E9300952852 /* PurchaseViewController.swift in Sources */,
 				4796315421D3F4EE0044A265 /* LootViewController.swift in Sources */,
 				4796314221D34BF30044A265 /* AppDelegate.swift in Sources */,
 			);
