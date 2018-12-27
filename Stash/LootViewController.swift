@@ -12,6 +12,13 @@ class LootViewController: UIViewController {
     
     //Game Variables
     var money = 1000
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gearSegueIdentifier" {
+            let destVC = segue.destination as! DeployViewController
+            destVC.money = money
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

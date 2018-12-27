@@ -32,11 +32,13 @@ class PurchaseViewController: UIViewController {
         var titleMessage = ""
         if shopPreset == 1 {
             titleMessage = "Ammo"
+            buttonImage.setImage(#imageLiteral(resourceName: "ammo_07"), for: .normal)
         } else if shopPreset == 2 {
             titleMessage = "Guns"
             buttonImage.setImage(#imageLiteral(resourceName: "pistols_12"), for: .normal)
         } else if shopPreset == 3 {
             titleMessage = "Items"
+            buttonImage.setImage(#imageLiteral(resourceName: "ResourcesFlatIcon_23"), for: .normal)
         }
         
         titleLabel.text = titleMessage

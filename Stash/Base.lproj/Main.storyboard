@@ -90,7 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="moneyLabel" destination="7zj-Ek-B1A" id="zPh-UG-zpR"/>
+                        <outlet property="moneyLabel" destination="7zj-Ek-B1A" id="OJq-BO-VVC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -127,7 +127,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1fX-E6-Sjx" kind="show" id="0JZ-4Y-9dv"/>
+                                    <segue destination="1fX-E6-Sjx" kind="show" identifier="gearSegueIdentifier" id="0JZ-4Y-9dv"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tR-Xs-IOg">
@@ -140,7 +140,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1fX-E6-Sjx" kind="show" id="1gP-Rf-kd2"/>
+                                    <segue destination="1fX-E6-Sjx" kind="show" identifier="gearSegueIdentifier" id="1gP-Rf-kd2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQz-pR-rLS">
@@ -153,7 +153,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="1fX-E6-Sjx" kind="show" id="B46-QQ-7CF"/>
+                                    <segue destination="1fX-E6-Sjx" kind="show" identifier="gearSegueIdentifier" id="B46-QQ-7CF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deploy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJC-lD-CQl">
@@ -393,10 +393,10 @@
             </objects>
             <point key="canvasLocation" x="1694" y="769"/>
         </scene>
-        <!--View Controller-->
+        <!--Gear View Controller-->
         <scene sceneID="7yy-NC-aBm">
             <objects>
-                <viewController id="1fX-E6-Sjx" customClass="ViewController" customModule="Stash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1fX-E6-Sjx" customClass="GearViewController" customModule="Stash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nh5-yn-sdq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -949,9 +949,9 @@
         <image name="switch" width="78.666664123535156" height="111"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iXd-CY-CJj"/>
+        <segue reference="3S5-tF-cBs"/>
         <segue reference="0JZ-4Y-9dv"/>
-        <segue reference="sh4-wl-Y3Y"/>
+        <segue reference="V9o-Xm-ViG"/>
         <segue reference="OQe-JH-CYh"/>
     </inferredMetricsTieBreakers>
 </document>
