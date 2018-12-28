@@ -440,7 +440,7 @@
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Rth-an-F44" kind="show" id="zQG-SJ-QeY"/>
+                                    <segue destination="Rth-an-F44" kind="show" identifier="gearPickSegueIdentifier" id="zQG-SJ-QeY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1I-Qq-Gt9">
@@ -452,6 +452,9 @@
                                 <state key="normal" title="Armor" backgroundImage="UI_01_02">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Rth-an-F44" kind="show" identifier="gearPickSegueIdentifier" id="hA4-4a-xbt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bMj-6k-ibK">
                                 <rect key="frame" x="269" y="667" width="78" height="111"/>
@@ -486,6 +489,9 @@
                                 <state key="normal" title="Items" backgroundImage="UI_01_02">
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Rth-an-F44" kind="show" identifier="gearPickSegueIdentifier" id="lTp-Yj-GHI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -550,7 +556,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="ammo_07"/>
                                 <connections>
-                                    <action selector="buyAmmo" destination="zFK-Ll-gFP" eventType="touchUpInside" id="05X-Vo-mDc"/>
+                                    <action selector="buyObject" destination="zFK-Ll-gFP" eventType="touchUpInside" id="05X-Vo-mDc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -839,10 +845,10 @@
             </objects>
             <point key="canvasLocation" x="5159" y="-689"/>
         </scene>
-        <!--Loot View Controller-->
+        <!--Gear Pick View Controller-->
         <scene sceneID="nfU-eT-ZoU">
             <objects>
-                <viewController id="Rth-an-F44" customClass="LootViewController" customModule="Stash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rth-an-F44" customClass="GearPickViewController" customModule="Stash" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zq0-wZ-agV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -949,9 +955,10 @@
         <image name="switch" width="78.666664123535156" height="111"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hA4-4a-xbt"/>
         <segue reference="3S5-tF-cBs"/>
-        <segue reference="0JZ-4Y-9dv"/>
-        <segue reference="V9o-Xm-ViG"/>
-        <segue reference="OQe-JH-CYh"/>
+        <segue reference="hOy-jX-KHS"/>
+        <segue reference="sh4-wl-Y3Y"/>
+        <segue reference="SkZ-eR-81y"/>
     </inferredMetricsTieBreakers>
 </document>

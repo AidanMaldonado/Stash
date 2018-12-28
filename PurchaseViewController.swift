@@ -16,6 +16,7 @@ class PurchaseViewController: UIViewController {
     var money = 1000
     var ammoCount = 2
     var shopPreset = 1 //1 is ammo, 2 is guns, 3 is items
+    var price = 0
     
     //Labels
     @IBOutlet weak var moneyLabel: UILabel!
@@ -33,12 +34,15 @@ class PurchaseViewController: UIViewController {
         if shopPreset == 1 {
             titleMessage = "Ammo"
             buttonImage.setImage(#imageLiteral(resourceName: "ammo_07"), for: .normal)
+            price = 10
         } else if shopPreset == 2 {
             titleMessage = "Guns"
             buttonImage.setImage(#imageLiteral(resourceName: "pistols_12"), for: .normal)
+            price = 100
         } else if shopPreset == 3 {
             titleMessage = "Items"
             buttonImage.setImage(#imageLiteral(resourceName: "ResourcesFlatIcon_23"), for: .normal)
+            price = 50
         }
         
         titleLabel.text = titleMessage
@@ -48,8 +52,8 @@ class PurchaseViewController: UIViewController {
         moneyLabel.text = "$" + String(money)
     }
     
-    @IBAction func buyAmmo() {
-        money -= 10
+    @IBAction func buyObject() {
+        money -= price
         ammoCount += 1
         updateLabels()
     }
